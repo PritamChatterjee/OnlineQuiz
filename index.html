@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java MCQ Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        #timer {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #d32f2f;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h3 {
+            margin-bottom: 10px;
+            color: #1976d2;
+        }
+        .options label {
+            display: block;
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+        #submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        #submit-btn:hover {
+            background-color: #1565c0;
+        }
+        #result {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e3f2fd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Java MCQ Quiz</h1>
+        <div id="timer">Time Remaining: 10:00</div>
+        <form id="quiz-form">
+            <div class="question">
+                <h3>1. What is the default value of a boolean variable in Java?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> true</label>
+                    <label><input type="radio" name="q1" value="b"> false</label>
+                    <label><input type="radio" name="q1" value="c"> null</label>
+                    <label><input type="radio" name="q1" value="d"> 0</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>2. Which keyword is used to inherit a class in Java?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> super</label>
+                    <label><input type="radio" name="q2" value="b"> extends</label>
+                    <label><input type="radio" name="q2" value="c"> implements</label>
+                    <label><input type="radio" name="q2" value="d"> this</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>3. What is the size of an int variable in Java?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> 2 bytes</label>
+                    <label><input type="radio" name="q3" value="b"> 4 bytes</label>
+                    <label><input type="radio" name="q3" value="c"> 8 bytes</label>
+                    <label><input type="radio" name="q3" value="d"> 1 byte</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>4. Which of these is not a Java access modifier?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> public</label>
+                    <label><input type="radio" name="q4" value="b"> private</label>
+                    <label><input type="radio" name="q4" value="c"> protected</label>
+                    <label><input type="radio" name="q4" value="d"> static</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>5. What does JVM stand for?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> Java Virtual Machine</label>
+                    <label><input type="radio" name="q5" value="b"> Java Visual Machine</label>
+                    <label><input type="radio" name="q5" value="c"> Java Variable Machine</label>
+                    <label><input type="radio" name="q5" value="d"> Java Version Manager</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>6. Which method is the entry point of a Java program?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> start()</label>
+                    <label><input type="radio" name="q6" value="b"> run()</label>
+                    <label><input type="radio" name="q6" value="c"> main()</label>
+                    <label><input type="radio" name="q6" value="d"> init()</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>7. Which of these is a valid way to create an array in Java?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> int[] arr = new int[5];</label>
+                    <label><input type="radio" name="q7" value="b"> int arr[] = new int[];</label>
+                    <label><input type="radio" name="q7" value="c"> int arr[5] = new int[];</label>
+                    <label><input type="radio" name="q7" value="d"> array int arr = new int[5];</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>8. What is the output of System.out.println(1 + 2 + "3");</h3>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> 33</label>
+                    <label><input type="radio" name="q8" value="b"> 123</label>
+                    <label><input type="radio" name="q8" value="c"> 3</label>
+                    <label><input type="radio" name="q8" value="d"> 6</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>9. Which exception is thrown when dividing by zero?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> NullPointerException</label>
+                    <label><input type="radio" name="q9" value="b"> IOException</label>
+                    <label><input type="radio" name="q9" value="c"> ArithmeticException</label>
+                    <label><input type="radio" name="q9" value="d"> ClassCastException</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>10. Which collection class allows duplicate elements?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> Set</label>
+                    <label><input type="radio" name="q10" value="b"> List</label>
+                    <label><input type="radio" name="q10" value="c"> Map</label>
+                    <label><input type="radio" name="q10" value="d"> Queue</label>
+                </div>
+            </div>
+            <button type="button" id="submit-btn">Submit Quiz</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const quizForm = document.getElementById('quiz-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const resultDiv = document.getElementById('result');
+        const timerDiv = document.getElementById('timer');
+        const totalTime = 10 * 60; // 10 minutes in seconds
+        let timeLeft = totalTime;
+        let timer;
+
+        // Correct answers for the quiz
+        const correctAnswers = {
+            q1: 'b', // false
+            q2: 'b', // extends
+            q3: 'b', // 4 bytes
+            q4: 'd', // static
+            q5: 'a', // Java Virtual Machine
+            q6: 'c', // main()
+            q7: 'a', // int[] arr = new int[5];
+            q8: 'a', // 33
+            q9: 'c', // ArithmeticException
+            q10: 'b' // List
+        };
+
+        // Start the timer
+        function startTimer() {
+            timer = setInterval(() => {
+                timeLeft--;
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerDiv.textContent = `Time Remaining: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    submitQuiz();
+                }
+            }, 1000);
+        }
+
+        // Calculate and display results
+        function submitQuiz() {
+            clearInterval(timer);
+            submitBtn.disabled = true;
+            let score = 0;
+            const formData = new FormData(quizForm);
+
+            for (let i = 1; i <= 10; i++) {
+                const answer = formData.get(`q${i}`);
+                if (answer === correctAnswers[`q${i}`]) {
+                    score++;
+                }
+            }
+
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = `
+                <h2>Quiz Results</h2>
+                <p>Your Score: ${score}/10</p>
+                <p>Percentage: ${(score * 10)}%</p>
+            `;
+            quizForm.style.display = 'none';
+            timerDiv.style.display = 'none';
+        }
+
+        // Event listener for submit button
+        submitBtn.addEventListener('click', submitQuiz);
+
+        // Start the timer when the page loads
+        startTimer();
+    </script>
+</body>
+</html>
